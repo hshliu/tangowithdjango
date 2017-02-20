@@ -1,0 +1,30 @@
+<! DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+	<head>
+		<title>Rango</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="{% static 'css/base.css'  %}" />
+		<!-- JavaScript -->
+		<script src="{% static 'js/jquery.js'  %}" ></script>
+	</head>
+
+	<body>
+		<h1><strong>ABOUT:</strong></h1>
+		<div>
+			This tutorial has been put together by
+			<strong>{{ myname }}</strong><br />
+		</div>
+		<div>
+			<a href="/rango/">Index</a><br />
+			<img src="{% static 'images/rango-2.jpg' %}"
+				alt="Picture of Rango"/>
+			<img src="/media/cat.jpg"
+				alt="Picture of cat"/>
+		</div>
+	</body>
+
+</html>
